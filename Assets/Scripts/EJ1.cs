@@ -22,6 +22,8 @@ public class EJ1 : MonoBehaviour
         ParametroWrite("La chain de texto es esta");
 
         ConcatenacionDatos("Mi edad es de " , edad);
+
+        Debug.Log(floatRedondearString(2.3f));
     }
 
     // Update is called once per frame
@@ -51,7 +53,7 @@ public class EJ1 : MonoBehaviour
 
     string floatRedondearString(float redondear)
     {
-        Mathf.Floor(redondear);
+        Mathf.Round(redondear);
         string redondeadoF = redondear.ToString();
         return redondeadoF;
     }
